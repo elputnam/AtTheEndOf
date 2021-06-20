@@ -4,6 +4,7 @@ let num;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   frameRate(15);
+  background(random(30));
   num = height*0.05;
   //num = 30;
   for (i = 0; i < num; i++){
