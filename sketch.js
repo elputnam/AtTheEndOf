@@ -37,8 +37,8 @@ class Element{
   constructor(){
     this.loc = createVector(random(width), random(height));
     this.vel = createVector(0,0);
-    //this.len = random(10,30);
-    this.len = random(width*0.03, width*0.07);
+    this.len = random(10,30);
+    //this.len = random(width*0.03, width*0.07);
     this.ts = 3;
     this.a = 0;
   }
