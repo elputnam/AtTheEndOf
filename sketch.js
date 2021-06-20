@@ -3,9 +3,9 @@ let num;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  frameRate(25);
-  num = width*0.1
-  //num = 5;
+  frameRate(15);
+  num = width*0.05
+  //num = 30;
   for (i = 0; i < num; i++){
     dance.push(new Element());
   }
