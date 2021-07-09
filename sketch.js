@@ -1,6 +1,13 @@
 let dance = [];
 let num;
 
+let link;
+let next; 
+let link1;
+let link2;
+let link3;
+
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
   frameRate(15);
@@ -10,11 +17,24 @@ function setup() {
   for (i = 0; i < num; i++){
     dance.push(new Element());
   }
+  link1 = createA('http://127.0.0.1:5501/GlibDive/', '');
+  link2 = createA('http://127.0.0.1:5501/PeatBramble/', '');
 }
 
 function draw() {
   background(random(30), 0.1);
   colorMode(HSB)
+
+    //choice
+    let choice = int(random(0, 2));;  
+    if ( choice == 0){
+       link = link1;
+        }
+    if (choice == 1){
+        link = link2;
+      }  
+      
+ 
   
   for (i = 0; i < dance.length; i++){
     dance[i].display();
@@ -22,7 +42,10 @@ function draw() {
     dance[i].edges();
   }
   scribble();
-  
+  if (frameCount == 500){
+    next = createButton('next').parent(link); 
+    next.position(width*.75, height*.75);
+  } 
 }
 
 function scribble(){
