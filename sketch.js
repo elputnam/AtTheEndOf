@@ -7,16 +7,24 @@ let link1;
 let link2;
 let link3;
 
+let j;
+let txt;
+
+function preload() {
+  txt = loadStrings('tether.txt');
+}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   frameRate(15);
   background(random(30));
   num = height*0.05;
+  j = 0;
   //num = 30;
   for (i = 0; i < num; i++){
     dance.push(new Element());
   }
+
   link1 = createA('http://127.0.0.1:5501/GlibDive/', '');
   link2 = createA('http://127.0.0.1:5501/PeatBramble/', '');
 }
@@ -38,13 +46,15 @@ function draw() {
   
   for (i = 0; i < dance.length; i++){
     dance[i].display();
-   dance[i].update();
+    dance[i].update();
     dance[i].edges();
   }
   scribble();
-  if (frameCount == 500){
+  tetherText();
+
+  if (frameCount == 1500){
     next = createButton('next').parent(link); 
-    next.position(width*.75, height*.75);
+    next.position(width*.25, height*.75);
   } 
 }
 
