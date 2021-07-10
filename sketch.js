@@ -3,9 +3,9 @@ let num;
 
 let link;
 let next; 
-let link1;
-let link2;
-let link3;
+//let link1;
+//let link2;
+//let link3;
 
 let j;
 let txt;
@@ -24,25 +24,23 @@ function setup() {
   for (i = 0; i < num; i++){
     dance.push(new Element());
   }
-
-  link1 = createA('http://127.0.0.1:5501/GlibDive/', '');
-  link2 = createA('http://127.0.0.1:5501/PeatBramble/', '');
+  link = createA('http://127.0.0.1:5501/PeatBramble/', '');
+  //link1 = createA('http://127.0.0.1:5501/GlibDive/', '');
+  //link2 = createA('http://127.0.0.1:5501/PeatBramble/', '');
 }
 
 function draw() {
   background(random(30), 0.1);
   colorMode(HSB)
 
-    //choice
-    let choice = int(random(0, 2));;  
+    //choice     
+    /*let choice = int(random(0, 2));;  
     if ( choice == 0){
        link = link1;
         }
     if (choice == 1){
         link = link2;
-      }  
-      
- 
+      } */  
   
   for (i = 0; i < dance.length; i++){
     dance[i].display();
@@ -52,7 +50,7 @@ function draw() {
   scribble();
   tetherText();
 
-  if (frameCount == 1500){
+  if (frameCount == 2000){
     next = createButton('next').parent(link); 
     next.position(width*.25, height*.75);
   } 

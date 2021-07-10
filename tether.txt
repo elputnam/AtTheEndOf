@@ -2,16 +2,13 @@
  the
  screen
 
- Touch
+ Move
  the 
- screen
+ mouse
  
- 
- Move 
- your
- finger
 
- 
+
+
  The 
  past 
  year 
@@ -26,6 +23,8 @@
  my sense 
  of time 
  and space. 
+
+
  In some ways, 
  these 
  technologies 
@@ -49,6 +48,8 @@
  with our 
  in-person 
  connections. 
+
+
  This 
  virtual 
  closeness 
@@ -59,6 +60,8 @@
  apart 
  through 
  the screen. 
+
+
  We 
  remain 
  apart 
@@ -74,6 +77,8 @@
  lacks 
  illusions 
  of autonomy.
+ 
+ 
  We 
  are 
  not 
