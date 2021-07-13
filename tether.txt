@@ -2,11 +2,6 @@
  the
  screen
 
- Move
- the 
- mouse
- 
-
 
 
  The 
@@ -15,7 +10,7 @@
  of isolation 
  and 
  increased 
- realiance 
+ reliance 
  on digital 
  connectivity 
  has 

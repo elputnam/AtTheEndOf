@@ -50,10 +50,11 @@ function draw() {
   scribble();
   tetherText();
 
+  /*
   if (frameCount == 2000){
     next = createButton('next').parent(link); 
     next.position(width*.25, height*.75);
-  } 
+  } */
 }
 
 function scribble(){
