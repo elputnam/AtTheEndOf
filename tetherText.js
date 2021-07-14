@@ -4,7 +4,7 @@ function tetherText(){
     noStroke();
     fill(200);
     textFont('VT323');
-    text(txt[j], width*.1, height*.8);
+    text(txt[j], width*.05, height*.8);
     j += 1;
     }
 }
