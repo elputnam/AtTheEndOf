@@ -24,7 +24,7 @@ function setup() {
   for (i = 0; i < num; i++){
     dance.push(new Element());
   }
-  link = createA('http://127.0.0.1:5501/PeatBramble/', '');
+  link = createA('https://fleshcircuit.github.io/PeatBramble/', '');
   //link1 = createA('http://127.0.0.1:5501/GlibDive/', '');
   //link2 = createA('http://127.0.0.1:5501/PeatBramble/', '');
 }
@@ -32,6 +32,7 @@ function setup() {
 function draw() {
   background(random(30), 0.1);
   colorMode(HSB)
+  print(frameCount);
 
     //choice     
     /*let choice = int(random(0, 2));;  
@@ -48,13 +49,15 @@ function draw() {
     dance[i].edges();
   }
   scribble();
-  tetherText();
+  if (frameCount >= 200){
+    tetherText();
+  }
 
-  /*
+  
   if (frameCount == 2000){
     next = createButton('next').parent(link); 
-    next.position(width*.25, height*.75);
-  } */
+    next.position(width*.1, height*.1);
+  } 
 }
 
 function scribble(){
