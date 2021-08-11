@@ -24,7 +24,7 @@ function setup() {
   for (i = 0; i < num; i++){
     dance.push(new Element());
   }
-  link = createA('https://fleshcircuit.github.io/PeatBramble/', '');
+  link = createA('https://elputnam.github.io/PeatBramble/', '');
   //link1 = createA('http://127.0.0.1:5501/GlibDive/', '');
   //link2 = createA('http://127.0.0.1:5501/PeatBramble/', '');
 }
