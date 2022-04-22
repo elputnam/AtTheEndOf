@@ -116,3 +116,7 @@ class Element{
   }
   
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
