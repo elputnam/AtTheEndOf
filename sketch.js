@@ -24,8 +24,8 @@ function setup() {
   for (i = 0; i < num; i++){
     dance.push(new Element());
   }
-  link = createA('https://elputnam.github.io/PeatBramble/', '');
-  //link1 = createA('http://127.0.0.1:5501/GlibDive/', '');
+  link = createA('http://127.0.0.1:5500/GlibDrive', '');
+  //link1 = createA('http://127.0.0.1:5500/GlibDive/', '');
   //link2 = createA('http://127.0.0.1:5501/PeatBramble/', '');
 }
 
@@ -55,8 +55,9 @@ function draw() {
 
   
   if (frameCount == 2000){
-    next = createButton('next').parent(link); 
-    next.position(width*.1, height*.1);
+    // next = createButton('next').parent(link); 
+    // next.position(width*.1, height*.1);
+    
   } 
 }
 
